@@ -1,16 +1,20 @@
 //bookmarK: Reactive State
-import React from 'react';
-import {render} from 'react-dom';
+//import React from 'react';
+//import {render} from 'react-dom';
+import myData from './data.js';
 
-
-
-var data = [
+/*var data = [
   {id: 1, author: "Pete Hunt", text: "This is one comment"},
   {id: 2, author: "Jordan Walke", text: "This is *another* comment"}
-];
+];*/
 
+
+console.log(myData);
+
+var data=myData;
 
 var CommentBox = React.createClass({
+
   render: function() {
     return (
      <div>
@@ -21,9 +25,18 @@ var CommentBox = React.createClass({
     );
   }
 });
+
 var CommentList = React.createClass({
   render: function() {
-    var commentNodes = this.props.data.map(function(comment) {
+
+    console.log(this.props.data);
+
+if( Object.prototype.toString.call( this.props.data.myData ) === '[object Array]' ) {
+    console.log( 'Array!' );
+}
+
+
+    var commentNodes = this.props.data.myData.map(function(comment) {
       return (
         <Comment author={comment.author} key={comment.id}>
           {comment.text}
@@ -67,6 +80,6 @@ render: function() {
 }); 
 
 ReactDOM.render(
-    <CommentBox data={data}/>,
+    <CommentBox data={data} />,
     document.getElementById('content')
 );
