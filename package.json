@@ -3,8 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "app/sandbox.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "webpack": "^1.13.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

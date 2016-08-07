@@ -1,4 +1,8 @@
 //bookmarK: Reactive State
+import React from 'react';
+import {render} from 'react-dom';
+
+
 
 var data = [
   {id: 1, author: "Pete Hunt", text: "This is one comment"},
@@ -9,7 +13,7 @@ var data = [
 var CommentBox = React.createClass({
   render: function() {
     return (
-     <div className="commentBox">
+     <div>
      <h1>Comments</h1>
      <CommentList data={this.props.data} />
      <CommentForm />
