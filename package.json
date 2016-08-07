@@ -1,0 +1,21 @@
+{
+  "name": "react-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/sandbox.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steveinatorx/react-sandbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steveinatorx/react-sandbox/issues"
+  },
+  "homepage": "https://github.com/steveinatorx/react-sandbox#readme"
+}
