@@ -1,10 +1,9 @@
 
-
 var APP_DIR=__dirname+'/src/client/app/';
 var BUILD_DIR=__dirname+'/src/client/public/';
 
-
 module.exports= {
+    watch: true,  
     entry:  APP_DIR+'/sandbox.js',
     output: {
           path:  BUILD_DIR,
@@ -26,6 +25,3 @@ module.exports= {
       ]
     }
 };
-
-
-
